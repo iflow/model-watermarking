@@ -28,6 +28,7 @@ parser.add_argument('--dataset', default='cifar10', help='the dataset to train o
 parser.add_argument('--num_classes', default=10, type=int, help='number of classes for classification')
 parser.add_argument('--arch', metavar='ARCH', default='simplenet', choices=model_names,
                     help='model architecture: ' + ' | '.join(model_names) + ' (default: simplenet)')
+parser.add_argument('--runname', default='train', help='the exp name')
 
 # hyperparameters
 parser.add_argument('--epochs_wo_wm', default=2, type=int, help='number of epochs trained without watermarks')
