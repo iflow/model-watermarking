@@ -39,6 +39,7 @@ parser.add_argument('--method', default=None, choices=watermarking_methods,
                     help='watermarking method: ' + ' | '.join(
                         watermarking_methods) + ' (default: weakness_into_strength)')
 parser.add_argument('--wm_type', default=None, help='wm type for ProtectingIPP: content, unrelated, noise')
+parser.add_argument('--save_wm', action='store_true', help='save generated watermarks?')
 parser.add_argument('--runname', default='train', help='the exp name')
 parser.add_argument('--trg_set_size', default=100, type=int, help='the size of the trigger set (default: 100)')
 parser.add_argument('--thresh', default=0.05, type=float, help='threshold for watermark verification')
